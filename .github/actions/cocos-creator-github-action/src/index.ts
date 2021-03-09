@@ -3,6 +3,7 @@ import * as installer from './installer';
 
 async function init() {
     try {
+        core.debug(`cocos version to download .`);
         if (process.env.NODE_ENV !== 'production') {
             require('dotenv').config();
         }
