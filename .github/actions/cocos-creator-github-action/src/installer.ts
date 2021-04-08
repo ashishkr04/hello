@@ -16,7 +16,7 @@ export async function getCocosCreator(
         downloadUrl,
     } = await helper.decideCocosVersion(version, platform);
 
-    let toolPath = tc.find(COCOS_CREATOR, version,'x64');
+    let toolPath = tc.find(COCOS_CREATOR, version,'x86');
     if (toolPath) {
         core.info(`Tool found in cache ${toolPath}`);
     } else {
